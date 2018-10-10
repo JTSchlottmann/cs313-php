@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<?php 
+<?php
+session_destroy();
 session_start(); 
 ?>
 

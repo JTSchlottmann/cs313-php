@@ -14,7 +14,7 @@ session_start();
       <script>
          function removeCart(book) {
 		 $.ajax({type: "POST", url: "./remove.php", data: { book: book}}) 
-	 $('#' + book).remove();
+	$('#' + book).remove();
 	 }
       </script>
    </head>

@@ -5,19 +5,19 @@
    {
 	   $book = $_POST['book'];
 
-	   if ($book = "odyssey") {
+	   if ($book === "odyssey") {
 		   $_SESSION["odyssey"] = true;
 	   }
 
-	   if($book = "sea") {
+	   if($book === "sea") {
 		   $_SESSION["sea"] = true;
 	   }
 
-	   if ($book = "war") {
+	   if ($book === "war") {
 		   $_SESSION["war"] = true;
 	   }
 
-	   if ($book = "monte") {
+	   if ($book === "monte") {
 		   $_SESSION["monte"] = true;
 	   }
 

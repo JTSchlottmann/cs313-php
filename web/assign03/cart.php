@@ -26,7 +26,7 @@ session_start();
                <th>Books</th>
                <th>Cost</th>
 	    </tr>
-<?php
+<!-- <?php
             if ($_SESSION["odyssey"] == true) {
 		    echo '<tr>
 			  <td>The Odyssey</td>
@@ -58,7 +58,7 @@ session_start();
 	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'sea\')" class="button"></td>
 	       </tr>'
 	    }
-             ?>
+             ?> -->
          </table>
 	 <br/>
 	 <input type="submit" value="View Cart" id="view" class="button">

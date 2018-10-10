@@ -27,10 +27,10 @@ session_start();
                <th>Cost</th>
 	    </tr>
  <?php 
-            if ($_SESSION["odyssey"] == true) {
+            /* if ($_SESSION["odyssey"] == true) {
 		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="button" value="Add to Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>'
 	    }
-            /*
+            
             if ($_SESSION["war"] == true) {
 	    echo '<tr>
 	       <td>War and Peace</td>

@@ -13,7 +13,8 @@ session_start();
       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
       <script>
          function removeCart(book) {
-	 $.ajax({type: "POST", url: "./remove.php", data: { book: book}})
+		 $.ajax({type: "POST", url: "./remove.php", data: { book: book}})
+		$('#' + book).remove();	 
          }
       </script>
    </head>
@@ -28,14 +29,14 @@ session_start();
 	    </tr>
  <?php 
              if ($_SESSION["odyssey"] == true) {
-		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="button" value="Add to Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>';
+		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="button" value="Remove from Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>';
 	    }
-            /*
+            
             if ($_SESSION["war"] == true) {
 	    echo '<tr>
 	       <td>War and Peace</td>
 	       <td>$20.40</td>
-	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'war\')" class="button"></td>
+	       <td><input type="button" value="Remove from Cart" onclick="removeCart(\'war\')" class="button"></td>
 	       </tr>';
 	    }
 
@@ -43,7 +44,7 @@ session_start();
 	    echo '<tr>
 	       <td>The Count of Monte Cristo</td>
       	       <td>$20.16</td>
-	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'monte\')" class="button"></td>
+	       <td><input type="button" value="Remove from Cart" onclick="removeCart(\'monte\')" class="button"></td>
 	       </tr>';
 	    }
 
@@ -51,13 +52,13 @@ session_start();
 	    echo '<tr>
                <td>Twenty Thousand Leagues Under the Sea</td>
 	       <td>$16.32</td>
-	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'sea\')" class="button"></td>
+	       <td><input type="button" value="Remove from Cart" onclick="removeCart(\'sea\')" class="button"></td>
 	       </tr>';
 	    }
-            */ ?> 
+             ?> 
          </table>
 	 <br/>
-	 <input type="submit" value="View Cart" id="view" class="button">
+	 <a href="./browse.php" class="button">Return to Shop</a>
       </div>
    </body>
 </html>

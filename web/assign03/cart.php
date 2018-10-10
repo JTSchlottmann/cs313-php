@@ -10,7 +10,7 @@ session_start();
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="shop.css">
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-2Kok7MbOxypgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOxypgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
       <script>
          function removeCart(book) {
 	 $.ajax({type: "POST", url: "./remove.php", data: { book: book}})
@@ -18,7 +18,7 @@ session_start();
       </script>
    </head>
    <body>
-      <form action="browser.php">
+      <form action="browse.php">
          <header>Cart</header>
          <hr></br>
          <table>

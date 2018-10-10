@@ -30,7 +30,7 @@ session_start();
 	    </tr>
  <?php 
              if ($_SESSION["odyssey"] == true) {
-		     echo '<tr>
+		     echo '<tr id="odyssey">
 			   <td>The Odyssey</td>
 			   <td>$18.75</td>
 			   <td><input type="button" value="Remove from Cart" onclick="removeCart(\'odyssey\')" class="button"></td>
@@ -38,7 +38,7 @@ session_start();
 	    }
             
             if ($_SESSION["war"] == true) {
-	    echo '<tr>
+	    echo '<tr id="war">
 	       <td>War and Peace</td>
 	       <td>$20.40</td>
 	       <td><input type="button" value="Remove from Cart" onclick="removeCart(\'war\')" class="button"></td>
@@ -54,7 +54,7 @@ session_start();
 	    }
 
 	    if ($_SESSION["sea"] == true) {
-	    echo '<tr>
+	    echo '<tr id="sea">
                <td>Twenty Thousand Leagues Under the Sea</td>
 	       <td>$16.32</td>
 	       <td><input type="button" value="Remove from Cart" onclick="removeCart(\'sea\')" class="button"></td>
@@ -64,6 +64,7 @@ session_start();
          </table>
 	 <br/>
 	 <a href="./browse.php" class="button">Return to Shop</a>
+         <a href="./checkout.php" class="button">Proceed to Checkout</a>
       </div>
    </body>
 </html>

@@ -27,16 +27,16 @@ session_start();
                <th>Cost</th>
 	    </tr>
  <?php 
-            /* if ($_SESSION["odyssey"] == true) {
-		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="button" value="Add to Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>'
+             if ($_SESSION["odyssey"] == true) {
+		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="button" value="Add to Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>';
 	    }
-            
+            /*
             if ($_SESSION["war"] == true) {
 	    echo '<tr>
 	       <td>War and Peace</td>
 	       <td>$20.40</td>
 	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'war\')" class="button"></td>
-	       </tr>'
+	       </tr>';
 	    }
 
 	    if ($_SESSION["monte"] == true) {
@@ -44,7 +44,7 @@ session_start();
 	       <td>The Count of Monte Cristo</td>
       	       <td>$20.16</td>
 	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'monte\')" class="button"></td>
-	       </tr>'
+	       </tr>';
 	    }
 
 	    if ($_SESSION["sea"] == true) {
@@ -52,7 +52,7 @@ session_start();
                <td>Twenty Thousand Leagues Under the Sea</td>
 	       <td>$16.32</td>
 	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'sea\')" class="button"></td>
-	       </tr>'
+	       </tr>';
 	    }
             */ ?> 
          </table>

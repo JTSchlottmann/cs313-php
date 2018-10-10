@@ -6,7 +6,7 @@
 	   $book = $_POST['book'];
 
 	   if ($book = "odyssey") {
-	       $_SESSION["odyssey"] = true;
+		   $_SESSION["odyssey"] = true;
 	   }
 
 	   if($book = "sea") {

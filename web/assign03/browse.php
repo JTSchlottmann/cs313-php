@@ -50,6 +50,7 @@ session_start();
          </table>
 	 <br/>
 	 <input type="submit" value="View Cart" id="view" class="button">
+         <a href="./cart.php" class="button">View Cart</a>
       </form>
    </body>
 </html>

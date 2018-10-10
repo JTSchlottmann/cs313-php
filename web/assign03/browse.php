@@ -23,7 +23,8 @@ session_start();
          <table>
             <tr>
                <th>Books</th>
-               <th>Cost</th>
+	       <th>Cost</th>
+               <th></th>
             </tr>
 	    <tr>
 	       <td>The Odyssey</td>

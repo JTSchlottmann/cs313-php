@@ -26,7 +26,7 @@ session_start();
                <th>Books</th>
                <th>Cost</th>
 	    </tr>
- <?php /*
+ <?php 
             if ($_SESSION["odyssey"] == true) {
 		    echo '<tr>
 			  <td>The Odyssey</td>
@@ -34,7 +34,7 @@ session_start();
                           <td><input type="button" value="Add to Cart" onclick="removeCart(\'odyssey\')" class="button"></td>
 			  </tr>'
 	    }
-            
+            /*
             if ($_SESSION["war"] == true) {
 	    echo '<tr>
 	       <td>War and Peace</td>

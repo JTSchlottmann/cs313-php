@@ -14,7 +14,8 @@ session_start();
       <script>
          function removeCart(book) {
 		 $.ajax({type: "POST", url: "./remove.php", data: { book: book}}) 
-         }
+	 $('#' + book).remove();
+	 }
       </script>
    </head>
    <body>
@@ -29,7 +30,11 @@ session_start();
 	    </tr>
  <?php 
              if ($_SESSION["odyssey"] == true) {
-		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="submit" value="Remove from Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>';
+		     echo '<tr>
+			   <td>The Odyssey</td>
+			   <td>$18.75</td>
+			   <td><input type="button" value="Remove from Cart" onclick="removeCart(\'odyssey\')" class="button"></td>
+                           </tr>';
 	    }
             
             if ($_SESSION["war"] == true) {
@@ -41,7 +46,7 @@ session_start();
 	    }
 
 	    if ($_SESSION["monte"] == true) {
-	    echo '<tr>
+	    echo '<tr id="monte">
 	       <td>The Count of Monte Cristo</td>
       	       <td>$20.16</td>
 	       <td><input type="button" value="Remove from Cart" onclick="removeCart(\'monte\')" class="button"></td>

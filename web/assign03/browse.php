@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <?php
-session_destroy();
 session_start(); 
 ?>
 
@@ -19,7 +18,7 @@ session_start();
       </script>
    </head>
    <body>
-      <form action="./cart.php">
+      <div>
          <header>Classic Books on Sale</header>
          <hr></br>
          <table>
@@ -50,8 +49,7 @@ session_start();
 	    </tr>
          </table>
 	 <br/>
-	 <input type="submit" value="View Cart" id="view" class="button">
          <a href="./cart.php" class="button">View Cart</a>
-      </form>
+      </div>
    </body>
 </html>

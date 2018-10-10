@@ -17,7 +17,7 @@ session_start();
       </script>
    </head>
    <body>
-      <form action="cart.php">
+      <form action="./cart.php">
          <header>Classic Books on Sale</header>
          <hr></br>
          <table>

@@ -30,7 +30,7 @@ session_start();
 		    echo '<tr>
 			  <td>The Odyssey</td>
                           <td>$18.75</td>
-                          <td><input type="button" value="Add to Cart" onclick="addToCart(odyssey)" class="button"></td>
+                          <td><input type="button" value="Add to Cart" onclick="removeCart(\'odyssey\')" class="button"></td>
 			  </tr>'
 	    }
             
@@ -38,7 +38,7 @@ session_start();
 	    echo '<tr>
 	       <td>War and Peace</td>
 	       <td>$20.40</td>
-	       <td><input type="button" value="Add to Cart" onclick="addToCart(war)" class="button"></td>
+	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'war\')" class="button"></td>
 	       </tr>'
 	    }
 
@@ -46,7 +46,7 @@ session_start();
 	    echo '<tr>
 	       <td>The Count of Monte Cristo</td>
       	       <td>$20.16</td>
-	       <td><input type="button" value="Add to Cart" onclick="addToCart(monte)" class="button"></td>
+	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'monte\')" class="button"></td>
 	       </tr>'
 	    }
 
@@ -54,7 +54,7 @@ session_start();
 	    echo '<tr>
                <td>Twenty Thousand Leagues Under the Sea</td>
 	       <td>$16.32</td>
-	       <td><input type="button" value="Add to Cart" onclick="addToCart(sea)" class="button"></td>
+	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'sea\')" class="button"></td>
 	       </tr>'
 	    }
              ?>

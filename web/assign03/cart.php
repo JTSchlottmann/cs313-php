@@ -13,8 +13,7 @@ session_start();
       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
       <script>
          function removeCart(book) {
-		 $.ajax({type: "POST", url: "./remove.php", data: { book: book}})
-		$('#' + book).remove();	 
+		 $.ajax({type: "POST", url: "./remove.php", data: { book: book}}) 
          }
       </script>
    </head>
@@ -25,11 +24,12 @@ session_start();
          <table>
             <tr>
                <th>Books</th>
-               <th>Cost</th>
+	       <th>Cost</th>
+               <th></th>
 	    </tr>
  <?php 
              if ($_SESSION["odyssey"] == true) {
-		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="button" value="Remove from Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>';
+		    echo '<tr><td>The Odyssey</td><td>$18.75</td><td><input type="reset" value="Remove from Cart" onclick="removeCart(\'odyssey\')" class="button"></td></tr>';
 	    }
             
             if ($_SESSION["war"] == true) {

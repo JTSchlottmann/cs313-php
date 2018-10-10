@@ -6,7 +6,7 @@ session_start();
 
 <html lang="en">
    <head>
-      <title>Classic Books</title>
+      <title>Cart</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="shop.css">
@@ -18,7 +18,7 @@ session_start();
       </script>
    </head>
    <body>
-      <form action="browse.php">
+      <div>
          <header>Cart</header>
          <hr></br>
          <table>
@@ -26,7 +26,7 @@ session_start();
                <th>Books</th>
                <th>Cost</th>
 	    </tr>
-<!-- <?php
+ <?php /*
             if ($_SESSION["odyssey"] == true) {
 		    echo '<tr>
 			  <td>The Odyssey</td>
@@ -58,10 +58,10 @@ session_start();
 	       <td><input type="button" value="Add to Cart" onclick="removeCart(\'sea\')" class="button"></td>
 	       </tr>'
 	    }
-             ?> -->
+            */ ?> 
          </table>
 	 <br/>
 	 <input type="submit" value="View Cart" id="view" class="button">
-      </form>
+      </div>
    </body>
 </html>

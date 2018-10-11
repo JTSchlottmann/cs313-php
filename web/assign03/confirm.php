@@ -40,7 +40,6 @@
             if ($_SESSION["sea"] == true) {
             echo '<tr id="sea">
                <td>Twenty Thousand Leagues Under the Sea</td>
-               <td>$16.32</td>
                </tr>';
             }
 

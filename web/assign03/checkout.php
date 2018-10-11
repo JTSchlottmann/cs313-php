@@ -11,7 +11,7 @@
    </head>
    <body>
       <form method="POST" action="confirm.php">
-         <h1>Checkout</h1>
+         <header>Checkout</header>
          <hr></br>
            
 	 Street Address: <input type="text" class="street" name="street" placeholder="Street Address">

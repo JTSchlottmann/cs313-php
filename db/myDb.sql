@@ -2,7 +2,7 @@ CREATE TABLE public.book (
 	id	SERIAL NOT NULL PRIMARY KEY,
 	title   VARCHAR(50),
 	author  VARCHAR(50),
-	prices  FLOAT
+	prices  REAL
 );
 
 CREATE TABLE public.user (
@@ -16,7 +16,7 @@ CREATE TABLE public.user (
 );
 
 CREATE TABLE public.history (
-        date    DATE NOT NULL,
-	user_id INT NOT NULL REFERENCES public.user(id),
-	book_id INT NOT NULL REFERENCES public.book(id)
+        buy_date DATE NOT NULL,
+	user_id  INT NOT NULL REFERENCES public.user(id),
+	book_id  INT NOT NULL REFERENCES public.book(id)
 );
